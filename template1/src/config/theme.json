@@ -1,0 +1,8 @@
+{
+    "themeOverrides": {
+        "Button": {
+            "color": "#3763FFFF",
+            "textColor": "#FFF"
+        }
+    }
+}
