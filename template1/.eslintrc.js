@@ -31,5 +31,7 @@ module.exports = {
     "no-multiple-empty-lines": "off",
     "no-unused-vars": "off",
     "no-undef": "off",
+    "vue/valid-v-model": "off",
+    "vue/no-v-model-argument": "off",
   },
 };
