@@ -1,6 +1,7 @@
 const { app, protocol, BrowserWindow, Menu } = require("electron");
 const { createProtocol } = require("vue-cli-plugin-electron-builder/lib");
 import initIpcEvent from "./modules/ipcEvent";
+const path = require("path");
 
 // Scheme must be registered before the app is ready
 protocol.registerSchemesAsPrivileged([
@@ -39,9 +40,6 @@ const createWindow = async (devPath, prodPath) => {
   process.env["ELECTRON_DISABLE_SECURITY_WARNINGS"] = "true";
   return win;
 };
-
-//初始化主进程监听事件
-initIpcEvent();
 
 app.on("ready", async () => {
   if (!process.env.WEBPACK_DEV_SERVER_URL) {

@@ -73,4 +73,29 @@ module.exports = {
       },
     },
   },
+  //多窗口配置
+  pages: {
+    window1: {
+      // entry for the page
+      entry: "src/window1/main.js",
+      // the source template
+      template: "public/index1.html",
+      // output as dist/index.html
+      filename: "index1.html",
+      // when using title option,
+      // template title tag needs to be <title><%= htmlWebpackPlugin.options.title %></title>
+      title: "window1",
+    },
+    window2: {
+      // entry for the page
+      entry: "src/window1/main.js",
+      // the source template
+      template: "public/index2.html",
+      // output as dist/index.html
+      filename: "index2.html",
+      // when using title option,
+      // template title tag needs to be <title><%= htmlWebpackPlugin.options.title %></title>
+      title: "window2",
+    },
+  },
 };
