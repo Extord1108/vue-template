@@ -24,3 +24,9 @@ pnpm-debug.log*
 out/
 #Electron-builder output
 /dist_electron
+
+# auto-import files
+components.d.ts
+auto-imports.d.ts
+.eslintrc-auto-import.json
+.eslintrc-auto-imports.json
