@@ -1,23 +1,11 @@
-import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
+import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
 
-const routes:RouteRecordRaw[] = [
-  {
-    path: '/',
-    name: 'home',
-    component: () => import('@/views/home/index.vue')
-  },
-  {
-    path: '/login',
-    name: 'login',
-    component: () => import('@/views/login/index.vue')
-  }
-]
+const routes: RouteRecordRaw[] = [];
 
 const router = createRouter({
   // history: createWebHashHistory(), // hash 路由模式
   history: createWebHistory(), // history 路由模式
-  routes // 路由规则
-})
+  routes, // 路由规则
+});
 
-export default router
-
+export default router;
